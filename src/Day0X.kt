@@ -9,7 +9,7 @@ fun main() {
 
     // test if implementation meets criteria from the description, like:
     val testInput = readInput("Day0X_test")
-    check(part1(testInput) == 1)
+    part1(testInput).also { println(it); check(it == 1) }
 
     val input = readInput("Day0X")
     println(part1(input))
