@@ -80,8 +80,7 @@ fun main() {
 
 data class HeadMove(val direction: HeadMoveDirection, var value: Int)
 
-
-sealed class Node(var x: Int, var y: Int) {
+private sealed class Node(var x: Int, var y: Int) {
 
     class Tail(x: Int, y: Int) : Node(x, y) {
         fun catchUp(otherX: Int, otherY: Int): Pair<Int, Int> {
