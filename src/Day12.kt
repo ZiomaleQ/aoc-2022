@@ -62,9 +62,7 @@ fun main() {
     println(part2(input))
 }
 
-private data class Cords(val x: Int, val y: Int) {
-    fun checkBoundary(height: Int, width: Int) = this.x in 0 until width && this.y in 0 until height
-}
+private fun Cords.checkBoundary(height: Int, width: Int) = this.x in 0 until width && this.y in 0 until height
 
 private class Grid(input: List<String>) {
     val height = input.size
